@@ -1,0 +1,5 @@
+T-shirts — файлы для этой папки:
+cover.jpg           — обложка раздела (на главной странице)
+horse-tee.jpg       — Horse Tee
+studio-tee.jpg      — Studio Tee
+turned-away-tee.jpg — Turned Away Tee

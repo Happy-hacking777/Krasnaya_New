@@ -1,0 +1,5 @@
+Prints — файлы для этой папки:
+cover.jpg                         — обложка раздела (на главной странице)
+horse-giclee-print-a3.jpg         — Horse — Giclée Print, A3
+the-wall-giclee-print-a3.jpg      — The Wall — Giclée Print, A3
+bear-giclee-print-a2.jpg          — Bear — Giclée Print, A2

@@ -1,0 +1,5 @@
+Vintage — файлы для этой папки:
+cover.jpg                — обложка раздела (на главной странице)
+vintage-find-no-1.jpg    — Vintage Find No. 1
+vintage-find-no-2.jpg    — Vintage Find No. 2
+vintage-find-no-3.jpg    — Vintage Find No. 3

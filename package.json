@@ -1,0 +1,9 @@
+{
+  "name": "katya-krasnaya-site",
+  "version": "1.0.0",
+  "description": "Katya Krasnaya — portfolio and shop site (static HTML/CSS/JS, no build step required).",
+  "private": true,
+  "scripts": {
+    "start": "npx live-server ."
+  }
+}
