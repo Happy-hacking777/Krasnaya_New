@@ -214,7 +214,7 @@
     '<section class="section" id="about">'+
       '<div class="section-head"><h2>About</h2></div>'+
       '<div class="about-grid">'+
-        '<div class="about-media">'+swatch('pal-d','ratio-square','Portrait, studio', 'images/about/portrait.jpg')+'</div>'+
+        '<div class="about-media">'+swatch('pal-d','ratio-square','Portrait, studio', 'images/about/portrait')+'</div>'+
         '<div class="about-body">'+
           '<div class="eyebrow" style="margin-bottom:.9rem">'+ABOUT.lede+'</div>'+
           paras(ABOUT.body.join('\n\n'))+
