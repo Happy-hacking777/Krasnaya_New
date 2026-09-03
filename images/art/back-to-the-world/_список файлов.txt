@@ -1,7 +1,6 @@
-Back to the World — файлы для этой папки:
-cover.jpg      — обложка коллекции (на главной странице)
-turned-away.jpg — Turned Away
-the-wall.jpg    — The Wall
-silence-i.jpg   — Silence I
-boundary.jpg    — Boundary
-alone.jpg       — Alone
+In Between — файлы для этой папки:
+cover.jpg                        — обложка коллекции (на главной странице)
+study-i.jpg                      — Study I
+fragment.jpg                     — Fragment
+sketch-for-a-larger-work.jpg     — Sketch for a Larger Work
+untitled.jpg                     — Untitled

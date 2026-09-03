@@ -28,7 +28,9 @@
         {title:'Dog', size:'70 × 70 cm', year:'2023', price:null, palette:'pal-e'},
         {title:'Horse II', size:'50 × 40 cm', year:'2023', price:'€780', palette:'pal-f'},
         {title:'Rocking Horse', size:'90 × 70 cm', year:'2024', price:'€1,450', palette:'pal-a'},
-        {title:'Old Toy', size:'40 × 40 cm', year:'2023', price:'€620', palette:'pal-c'}
+        {title:'Old Toy', size:'40 × 40 cm', year:'2023', price:'€620', palette:'pal-c'},
+        {title:'Elephant', size:'55 × 45 cm', year:'2024', price:'€880', palette:'pal-d'},
+        {title:'Rabbit', size:'45 × 35 cm', year:'2023', price:'€540', palette:'pal-b'}
       ]
     },
     {
@@ -46,7 +48,10 @@
         {title:'The Wall', size:'70 × 90 cm', year:'2024', price:null, palette:'pal-f'},
         {title:'Silence I', size:'60 × 60 cm', year:'2025', price:'€980', palette:'pal-e'},
         {title:'Boundary', size:'80 × 60 cm', year:'2024', price:'€1,150', palette:'pal-d'},
-        {title:'Alone', size:'50 × 70 cm', year:'2025', price:'€890', palette:'pal-a'}
+        {title:'Alone', size:'50 × 70 cm', year:'2025', price:'€890', palette:'pal-a'},
+        {title:'Silence II', size:'60 × 60 cm', year:'2025', price:'€1,020', palette:'pal-c'},
+        {title:'Reflection', size:'70 × 60 cm', year:'2025', price:'€1,180', palette:'pal-b'},
+        {title:'Distance', size:'90 × 70 cm', year:'2024', price:'€1,350', palette:'pal-e'}
       ]
     },
     {
@@ -63,7 +68,15 @@
         {title:'Study I', size:'40 × 30 cm', year:'2025', price:'€480', palette:'pal-c'},
         {title:'Fragment', size:'30 × 30 cm', year:'2024', price:'€360', palette:'pal-b'},
         {title:'Sketch for a Larger Work', size:'50 × 40 cm', year:'2025', price:'€620', palette:'pal-a'},
-        {title:'Untitled', size:'60 × 45 cm', year:'2024', price:null, palette:'pal-d'}
+        {title:'Untitled', size:'60 × 45 cm', year:'2024', price:null, palette:'pal-d'},
+        {title:'Study II', size:'35 × 30 cm', year:'2025', price:'€420', palette:'pal-e'},
+        {title:'Study III', size:'40 × 35 cm', year:'2025', price:'€460', palette:'pal-f'},
+        {title:'Passage', size:'50 × 45 cm', year:'2024', price:'€560', palette:'pal-c'},
+        {title:'Untitled II', size:'55 × 40 cm', year:'2025', price:null, palette:'pal-b'},
+        {title:'Interlude', size:'45 × 35 cm', year:'2024', price:'€480', palette:'pal-a'},
+        {title:'Trace', size:'35 × 25 cm', year:'2025', price:'€340', palette:'pal-d'},
+        {title:'Echo', size:'50 × 40 cm', year:'2024', price:'€520', palette:'pal-e'},
+        {title:'Marginalia', size:'30 × 30 cm', year:'2025', price:null, palette:'pal-c'}
       ]
     }
   ];
