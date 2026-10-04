@@ -45,8 +45,8 @@
   --line: rgba(32,29,24,.16);
   --line-strong: rgba(32,29,24,.32);
 
-  --font-display: 'Fraunces', Georgia, 'Times New Roman', serif;
-  --font-body: 'IBM Plex Sans', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;
+  --font-display: 'IBM Plex Mono', 'SFMono-Regular', Consolas, 'Liberation Mono', monospace;
+  --font-body: 'IBM Plex Mono', 'SFMono-Regular', Consolas, 'Liberation Mono', monospace;
   --font-mono: 'IBM Plex Mono', 'SFMono-Regular', Consolas, 'Liberation Mono', monospace;
 
   --sp-1: .5rem;  --sp-2: 1rem;  --sp-3: 1.6rem;
@@ -67,6 +67,7 @@ body{
   color:var(--ink);
   font-family:var(--font-body);
   font-weight:300;
+  text-transform:lowercase;
   font-size:16px;
   line-height:1.65;
   -webkit-font-smoothing:antialiased;
@@ -140,6 +141,17 @@ a:focus-visible, button:focus-visible{
   .wordmark{ font-size:.74rem; letter-spacing:.06em; }
 }
 
+/* ---------- hero banner ---------- */
+.hero-banner{
+  margin-top:var(--sp-4);
+  aspect-ratio:2.03 / 1; overflow:hidden; border-radius:2px;
+  background:var(--surface-raised);
+}
+.hero-banner img{ display:block; width:100%; height:100%; object-fit:cover; }
+@media (max-width:640px){
+  .hero-banner{ margin-top:var(--sp-2); aspect-ratio:16 / 10; }
+}
+
 /* ---------- section shell ---------- */
 .section{ padding:var(--sp-6) 0; }
 .section + .section{ border-top:1px solid var(--line); }
@@ -149,10 +161,12 @@ a:focus-visible, button:focus-visible{
 }
 .section-head h2{
   font-family:var(--font-display); font-weight:500;
-  font-size:clamp(2rem,4vw,3rem); text-wrap:balance;
+  font-size:1.08rem; text-wrap:balance;
   letter-spacing:-.01em;
 }
 .section-note{ max-width:34ch; text-align:right; color:var(--ink-soft); font-size:.92rem; }
+.section-head--center{ flex-direction:column; align-items:center; justify-content:center; gap:var(--sp-1); text-align:center; }
+.section-head--center .section-note{ text-align:center; max-width:none; }
 @media (max-width:640px){
   .section{ padding:var(--sp-5) 0; }
   .section-head{ flex-direction:column; align-items:flex-start; gap:var(--sp-1); }
@@ -171,8 +185,8 @@ a:focus-visible, button:focus-visible{
 .row-media a{ display:block; }
 .row-content{ display:flex; flex-direction:column; gap:var(--sp-2); }
 .row-content h3{
-  font-family:var(--font-display); font-weight:600;
-  font-size:clamp(1.7rem,3vw,2.6rem); text-wrap:balance; letter-spacing:-.01em;
+  font-family:var(--font-display); font-weight:500;
+  font-size:1.08rem; text-wrap:balance; letter-spacing:-.01em;
 }
 .row-teaser{ color:var(--ink-soft); max-width:44ch; }
 .explore{
@@ -285,8 +299,8 @@ a:hover > .swatch, .card-link:hover .swatch{ transform:scale(1.025); }
 .back-link:hover{ color:var(--patina-deep); }
 .detail-head{ max-width:60ch; margin-bottom:var(--sp-5); }
 .detail-head h1{
-  font-family:var(--font-display); font-weight:600;
-  font-size:clamp(2.4rem,5.5vw,4rem); text-wrap:balance; letter-spacing:-.01em; margin-bottom:var(--sp-2);
+  font-family:var(--font-display); font-weight:500;
+  font-size:1.08rem; text-wrap:balance; letter-spacing:-.01em; margin-bottom:var(--sp-2);
 }
 .detail-body p + p{ margin-top:1.1em; }
 .detail-body{ color:var(--ink); max-width:62ch; }
@@ -309,7 +323,7 @@ a:hover > .swatch, .card-link:hover .swatch{ transform:scale(1.025); }
 }
 .card-link{ display:block; }
 .card-meta{ display:flex; justify-content:space-between; align-items:baseline; gap:var(--sp-2); margin-top:.85rem; }
-.card-title{ font-family:var(--font-display); font-weight:500; font-size:1.15rem; }
+.card-title{ font-family:var(--font-display); font-weight:500; font-size:1.08rem; }
 .card-price{ font-family:var(--font-mono); font-size:.82rem; font-variant-numeric:tabular-nums; white-space:nowrap; }
 .card-price.sold{ color:var(--ink-faint); }
 .card-dims{

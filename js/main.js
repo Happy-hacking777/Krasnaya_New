@@ -12,6 +12,27 @@
 
   var COLLECTIONS = [
     {
+      slug:'back-to-the-world',
+      title:'Dialogue with the Wall',
+      years:'2024–2025',
+      palette:'pal-d',
+      teaser:'The moment when a person becomes tired of constant communication with the outside world.',
+      description:
+        "In this series, the artist explores the moment when a person becomes tired of constant communication with the outside world and of seeing themselves through the eyes, reactions and expectations of others.\n\n"+
+        "The figures turned away seem to choose a space of silence, where nothing needs to be explained or displayed. The wall becomes a boundary between the outer and inner worlds, the visible and the hidden.\n\n"+
+        "What happens when a person stops being a reflection of the world around them and is left alone with themselves?",
+      works:[
+        {title:'Turned Away', size:'100 × 80 cm', year:'2025', price:'€1,600', palette:'pal-d'},
+        {title:'The Wall', size:'70 × 90 cm', year:'2024', price:null, palette:'pal-f'},
+        {title:'Silence I', size:'60 × 60 cm', year:'2025', price:'€980', palette:'pal-e'},
+        {title:'Boundary', size:'80 × 60 cm', year:'2024', price:'€1,150', palette:'pal-d'},
+        {title:'Alone', size:'50 × 70 cm', year:'2025', price:'€890', palette:'pal-a'},
+        {title:'Silence II', size:'60 × 60 cm', year:'2025', price:'€1,020', palette:'pal-c'},
+        {title:'Reflection', size:'70 × 60 cm', year:'2025', price:'€1,180', palette:'pal-b'},
+        {title:'Distance', size:'90 × 70 cm', year:'2024', price:'€1,350', palette:'pal-e'}
+      ]
+    },
+    {
       slug:'patina-of-childhood',
       title:'The Patina of Childhood',
       years:'2023–2024',
@@ -34,27 +55,6 @@
       ]
     },
     {
-      slug:'back-to-the-world',
-      title:'Phenomenon to the World: Dialogue with the Wall',
-      years:'2024–2025',
-      palette:'pal-d',
-      teaser:'The moment when a person becomes tired of constant communication with the outside world.',
-      description:
-        "In this series, the artist explores the moment when a person becomes tired of constant communication with the outside world and of seeing themselves through the eyes, reactions and expectations of others.\n\n"+
-        "The figures turned away seem to choose a space of silence, where nothing needs to be explained or displayed. The wall becomes a boundary between the outer and inner worlds, the visible and the hidden.\n\n"+
-        "What happens when a person stops being a reflection of the world around them and is left alone with themselves?",
-      works:[
-        {title:'Turned Away', size:'100 × 80 cm', year:'2025', price:'€1,600', palette:'pal-d'},
-        {title:'The Wall', size:'70 × 90 cm', year:'2024', price:null, palette:'pal-f'},
-        {title:'Silence I', size:'60 × 60 cm', year:'2025', price:'€980', palette:'pal-e'},
-        {title:'Boundary', size:'80 × 60 cm', year:'2024', price:'€1,150', palette:'pal-d'},
-        {title:'Alone', size:'50 × 70 cm', year:'2025', price:'€890', palette:'pal-a'},
-        {title:'Silence II', size:'60 × 60 cm', year:'2025', price:'€1,020', palette:'pal-c'},
-        {title:'Reflection', size:'70 × 60 cm', year:'2025', price:'€1,180', palette:'pal-b'},
-        {title:'Distance', size:'90 × 70 cm', year:'2024', price:'€1,350', palette:'pal-e'}
-      ]
-    },
-    {
       slug:'in-between',
       title:'In Between',
       years:'2024–2025',
@@ -69,14 +69,27 @@
         {title:'Fragment', size:'30 × 30 cm', year:'2024', price:'€360', palette:'pal-b'},
         {title:'Sketch for a Larger Work', size:'50 × 40 cm', year:'2025', price:'€620', palette:'pal-a'},
         {title:'Untitled', size:'60 × 45 cm', year:'2024', price:null, palette:'pal-d'},
-        {title:'Study II', size:'35 × 30 cm', year:'2025', price:'€420', palette:'pal-e'},
-        {title:'Study III', size:'40 × 35 cm', year:'2025', price:'€460', palette:'pal-f'},
-        {title:'Passage', size:'50 × 45 cm', year:'2024', price:'€560', palette:'pal-c'},
-        {title:'Untitled II', size:'55 × 40 cm', year:'2025', price:null, palette:'pal-b'},
-        {title:'Interlude', size:'45 × 35 cm', year:'2024', price:'€480', palette:'pal-a'},
-        {title:'Trace', size:'35 × 25 cm', year:'2025', price:'€340', palette:'pal-d'},
+        {title:'Study II', size:'35 × 30 cm', year:'2025', price:'€420', palette:'pal-e'}
+      ]
+    },
+    {
+      slug:'house-in-khaos',
+      title:'House/Chaos',
+      years:'2025',
+      palette:'pal-b',
+      teaser:'A home is meant to be a place of order and shelter — but what happens when chaos finds its way inside?',
+      description:
+        "A home is meant to be a place of order and shelter. In this series, Katya Krasnaya looks at the moments when that order begins to shift — when objects, rooms and the people within them lose their fixed places.\n\n"+
+        "Chaos here is not only destruction, but also a new kind of freedom: a space where familiar things are rearranged and seen again for the first time.\n\n"+
+        "Draft copy — replace with final text.",
+      works:[
+        {title:'Marginalia', size:'30 × 30 cm', year:'2025', price:null, palette:'pal-c'},
         {title:'Echo', size:'50 × 40 cm', year:'2024', price:'€520', palette:'pal-e'},
-        {title:'Marginalia', size:'30 × 30 cm', year:'2025', price:null, palette:'pal-c'}
+        {title:'Interlude', size:'45 × 35 cm', year:'2024', price:'€480', palette:'pal-a'},
+        {title:'Passage', size:'50 × 45 cm', year:'2024', price:'€560', palette:'pal-c'},
+        {title:'Study III', size:'40 × 35 cm', year:'2025', price:'€460', palette:'pal-f'},
+        {title:'Trace', size:'35 × 25 cm', year:'2025', price:'€340', palette:'pal-d'},
+        {title:'Untitled II', size:'55 × 40 cm', year:'2025', price:null, palette:'pal-b'}
       ]
     }
   ];
@@ -104,18 +117,6 @@
         {name:'Horse Tee', price:'€35', edition:null, palette:'pal-a'},
         {name:'Studio Tee', price:'€30', edition:null, palette:'pal-f'},
         {name:'Turned Away Tee', price:'€35', edition:null, palette:'pal-d'}
-      ]
-    },
-    {
-      slug:'vintage',
-      name:'Vintage',
-      palette:'pal-e',
-      teaser:'One-of-a-kind vintage objects, hand-selected and occasionally reworked in the studio.',
-      description:'One-of-a-kind vintage objects, hand-selected and occasionally reworked in the studio. Each piece is unique and sold once. Draft copy — replace with final text.',
-      products:[
-        {name:'Vintage Find No. 1', price:'€120', edition:'One of one', palette:'pal-b'},
-        {name:'Vintage Find No. 2', price:'€95', edition:'One of one', palette:'pal-e'},
-        {name:'Vintage Find No. 3', price:'€150', edition:'One of one', palette:'pal-c'}
       ]
     }
   ];
@@ -187,7 +188,6 @@
       return '<div class="checker-row'+(i===0?' enter':'')+'">'+
         '<a class="row-media" href="#/art/'+c.slug+'" aria-label="'+c.title+'">'+swatch(c.palette,'ratio-tall','Study, '+c.years, coverImg('art', c.slug))+'</a>'+
         '<div class="row-content">'+
-          '<div class="eyebrow">Collection — '+c.works.length+' works, '+c.years+'</div>'+
           '<h3>'+c.title+'</h3>'+
           '<p class="row-teaser">'+c.teaser+'</p>'+
           '<a class="explore" href="#/art/'+c.slug+'">Explore '+arrowSvg+'</a>'+
@@ -208,18 +208,19 @@
     }).join('');
 
     return ''+
+    '<div class="hero-banner enter"><img src="images/banner/banner.jpg" alt="Katya Krasnaya — paintings in the studio" width="2400" height="1180"></div>'+
     '<section class="section" id="art" style="padding-top:var(--sp-4)">'+
-      '<div class="section-head">'+
-        '<h2 class="enter">Art</h2>'+
-        '<p class="section-note enter enter-2">Paintings, sculpture and objects, gathered into ongoing collections.</p>'+
+      '<div class="section-head section-head--center">'+
+        '<h2 class="enter">gallery</h2>'+
+        '<p class="section-note enter enter-2">Artworks, gathered into ongoing collections.</p>'+
       '</div>'+
       '<div class="checker">'+artRows+'</div>'+
     '</section>'+
 
     '<section class="section" id="shop">'+
-      '<div class="section-head">'+
+      '<div class="section-head section-head--center">'+
         '<h2>Shop</h2>'+
-        '<p class="section-note">Prints, wearables and vintage finds from the studio.</p>'+
+        '<p class="section-note">Prints and wearables from the studio.</p>'+
       '</div>'+
       '<div class="checker">'+shopRows+'</div>'+
     '</section>'+
@@ -231,7 +232,6 @@
         '<div class="about-body">'+
           '<div class="eyebrow" style="margin-bottom:.9rem">'+ABOUT.lede+'</div>'+
           paras(ABOUT.body.join('\n\n'))+
-          '<div class="tags">'+ABOUT.tags.map(function(t){ return '<span class="tag">'+t+'</span>'; }).join('')+'</div>'+
         '</div>'+
       '</div>'+
     '</section>';
@@ -256,7 +256,6 @@
     '<div class="section" style="padding-top:var(--sp-4)">'+
       backLink('art','Art')+
       '<div class="detail-head enter">'+
-        '<div class="eyebrow" style="margin-bottom:.9rem">Collection — '+c.works.length+' works, '+c.years+'</div>'+
         '<h1>'+c.title+'</h1>'+
       '</div>'+
       '<div class="detail-body enter enter-2">'+paras(c.description)+'</div>'+
@@ -306,7 +305,7 @@
       '<div class="stage enter">'+swatch(w.palette,'ratio-hero',c.title, pieceImg('art', c.slug, workSlug))+'</div>'+
       '<div class="detail-head enter enter-2" style="margin-bottom:var(--sp-3)">'+
         '<div class="eyebrow" style="margin-bottom:.9rem">'+c.title+'</div>'+
-        '<h1 style="font-size:clamp(2rem,4.5vw,3.2rem)">'+w.title+'</h1>'+
+        '<h1>'+w.title+'</h1>'+
       '</div>'+
       '<div class="piece-meta enter enter-2">'+
         '<span class="dims">'+w.size+' · '+w.year+'</span>'+
@@ -331,7 +330,7 @@
       '<div class="stage enter">'+swatch(p.palette,'ratio-hero',s.name, pieceImg('shop', s.slug, productSlug))+'</div>'+
       '<div class="detail-head enter enter-2" style="margin-bottom:var(--sp-3)">'+
         '<div class="eyebrow" style="margin-bottom:.9rem">Shop — '+s.name+'</div>'+
-        '<h1 style="font-size:clamp(2rem,4.5vw,3.2rem)">'+p.name+'</h1>'+
+        '<h1>'+p.name+'</h1>'+
       '</div>'+
       '<div class="piece-meta enter enter-2">'+
         '<span class="dims">'+(p.edition||'')+'</span>'+

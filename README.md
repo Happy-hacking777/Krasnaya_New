@@ -35,7 +35,7 @@
 - `elephant.jpg` — Elephant
 - `rabbit.jpg` — Rabbit
 
-**Phenomenon to the World: Dialogue with the Wall** (папка на диске всё ещё называется `back-to-the-world` — так уже загруженные фото не нужно никуда переносить) → `images/art/back-to-the-world/` (8 картин)
+**Dialogue with the Wall** (папка на диске всё ещё называется `back-to-the-world` — так уже загруженные фото не нужно никуда переносить) → `images/art/back-to-the-world/` (8 картин)
 - `cover.jpg` — обложка коллекции
 - `turned-away.jpg` — Turned Away
 - `the-wall.jpg` — The Wall
@@ -46,20 +46,23 @@
 - `reflection.jpg` — Reflection
 - `distance.jpg` — Distance
 
-**In Between** → `images/art/in-between/` (12 картин)
+**In Between** → `images/art/in-between/` (5 картин)
 - `cover.jpg` — обложка коллекции
 - `study-i.jpg` — Study I
 - `fragment.jpg` — Fragment
 - `sketch-for-a-larger-work.jpg` — Sketch for a Larger Work
 - `untitled.jpg` — Untitled
 - `study-ii.jpg` — Study II
-- `study-iii.jpg` — Study III
-- `passage.jpg` — Passage
-- `untitled-ii.jpg` — Untitled II
-- `interlude.jpg` — Interlude
-- `trace.jpg` — Trace
-- `echo.jpg` — Echo
+
+**House/Chaos** → `images/art/house-in-khaos/` (7 картин)
+- `cover.jpg` — обложка коллекции (сейчас — копия Marginalia)
 - `marginalia.jpg` — Marginalia
+- `echo.jpg` — Echo
+- `interlude.jpg` — Interlude
+- `passage.jpg` — Passage
+- `study-iii.jpg` — Study III
+- `trace.jpg` — Trace
+- `untitled-ii.jpg` — Untitled II
 
 ### Shop
 
