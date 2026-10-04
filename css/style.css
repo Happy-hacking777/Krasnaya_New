@@ -336,3 +336,16 @@ a:hover > .swatch, .card-link:hover .swatch{ transform:scale(1.025); }
 @keyframes rise{ from{ opacity:0; transform:translateY(10px); } to{ opacity:1; transform:translateY(0); } }
 .enter{ animation:rise .7s cubic-bezier(.2,.7,.3,1) both; }
 .enter-2{ animation-delay:.08s; }
+
+/* ---------- gallery section (home) ---------- */
+.section--gallery{ padding-top:var(--sp-4); }
+
+/* mobile only */
+@media (max-width:640px){
+  .section--gallery{ padding-top:var(--sp-5); }
+  .section-head.section-head--center{ align-items:center; text-align:center; gap:.35rem; }
+  .section-head--center .section-note{ text-align:center; }
+  .section--gallery .section-head{ margin-bottom:var(--sp-3); }
+  .section--gallery .checker-row:first-child{ padding-top:0; }
+}
+

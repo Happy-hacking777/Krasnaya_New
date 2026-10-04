@@ -209,7 +209,7 @@
 
     return ''+
     '<div class="hero-banner enter"><img src="images/banner/banner.jpg" alt="Katya Krasnaya — paintings in the studio" width="2400" height="1180"></div>'+
-    '<section class="section" id="art" style="padding-top:var(--sp-4)">'+
+    '<section class="section section--gallery" id="art">'+
       '<div class="section-head section-head--center">'+
         '<h2 class="enter">gallery</h2>'+
         '<p class="section-note enter enter-2">Artworks, gathered into ongoing collections.</p>'+
