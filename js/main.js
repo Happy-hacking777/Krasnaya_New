@@ -199,7 +199,7 @@
   function viewHome(){
     var artRows = COLLECTIONS.map(function(c,i){
       return '<div class="checker-row'+(i===0?' enter':'')+'">'+
-        '<a class="row-media" href="#/art/'+c.slug+'" aria-label="'+c.title+'">'+swatch(c.palette,'ratio-tall','Study, '+c.years, coverImg('art', c.slug))+'</a>'+
+        '<a class="row-media" href="#/art/'+c.slug+'" aria-label="'+c.title+'">'+swatch(c.palette,'ratio-natural','Study, '+c.years, coverImg('art', c.slug))+'</a>'+
         '<div class="row-content">'+
           '<h3>'+c.title+'</h3>'+
           '<p class="row-teaser">'+c.teaser+'</p>'+

@@ -239,6 +239,10 @@ a:hover > .swatch, .card-link:hover .swatch{ transform:scale(1.025); }
   font-family:var(--font-mono); font-size:.62rem; letter-spacing:.1em;
   text-transform:uppercase; color:rgba(32,29,24,.45);
 }
+/* Caption text is only for the generated color-placeholder state —
+   once a real photo has loaded, hide it everywhere so it never
+   overlaps or duplicates text shown elsewhere on the page. */
+.has-photo .swatch-caption{ display:none; }
 
 .ratio-tall{ aspect-ratio:4/5; }
 .ratio-square{ aspect-ratio:1/1; }
