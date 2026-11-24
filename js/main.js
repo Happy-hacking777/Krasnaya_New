@@ -256,7 +256,7 @@
     var cards = c.works.map(function(w){
       var wSlug = slugify(w.title);
       return '<a class="card-link" href="#/art/'+c.slug+'/'+wSlug+'">'+
-        swatch(w.palette,'ratio-tall', null, pieceImg('art', c.slug, wSlug))+
+        swatch(w.palette,'ratio-natural', null, pieceImg('art', c.slug, wSlug))+
         '<div class="card-meta">'+
           '<span class="card-title">'+w.title+'</span>'+
           '<span class="card-price'+(w.price?'':' sold')+'">'+(w.price||'Sold')+'</span>'+

@@ -243,6 +243,19 @@ a:hover > .swatch, .card-link:hover .swatch{ transform:scale(1.025); }
 .ratio-tall{ aspect-ratio:4/5; }
 .ratio-square{ aspect-ratio:1/1; }
 .ratio-wide{ aspect-ratio:5/4; }
+/* Gallery grid cards: each painting keeps its own real proportions,
+   never cropped. Shows as a 4/5 placeholder box until a photo has
+   loaded, then the box drops to the photo's own natural ratio. */
+.ratio-natural{ aspect-ratio:4/5; }
+.ratio-natural.has-photo{ aspect-ratio:auto; height:auto; background:none; }
+.ratio-natural.has-photo .swatch-photo{
+  position:static; width:100%; height:auto; object-fit:contain;
+}
+.ratio-natural.has-photo::before,
+.ratio-natural.has-photo::after,
+.ratio-natural.has-photo .blob{
+  display:none;
+}
 .ratio-hero{ aspect-ratio:auto; height:min(86vh, 920px); } /* big detail view — large scale */
 .ratio-hero .swatch-photo{ object-fit:contain; } /* full painting visible, never cropped, on the big detail view */
 /* Once a real photo has loaded on the big detail view, drop the
@@ -320,6 +333,7 @@ a:hover > .swatch, .card-link:hover .swatch{ transform:scale(1.025); }
 .grid{
   display:grid; grid-template-columns:repeat(auto-fill,minmax(255px,1fr));
   gap:var(--sp-4) var(--sp-3); margin-top:var(--sp-5);
+  align-items:start;
 }
 .card-link{ display:block; }
 .card-meta{ display:flex; justify-content:space-between; align-items:baseline; gap:var(--sp-2); margin-top:.85rem; }
