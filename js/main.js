@@ -182,7 +182,9 @@
       var candidates = IMG_EXTENSIONS.map(function(ext){ return imgBasePath+'.'+ext; });
       var first = candidates[0];
       var rest = candidates.slice(1).join('|');
-      img = '<img class="swatch-photo" src="'+first+'" data-fallbacks="'+rest+'" alt="" loading="lazy" '+
+      var isHero = ratio === 'ratio-hero';
+      var loadAttrs = isHero ? 'loading="eager" fetchpriority="high"' : 'loading="lazy"';
+      img = '<img class="swatch-photo" src="'+first+'" data-fallbacks="'+rest+'" alt="" '+loadAttrs+' '+
             'onload="this.classList.add(\'is-loaded\');this.parentElement.classList.add(\'has-photo\')" onerror="imgFallback(this)">';
     }
     return '<div class="swatch '+paletteClass+' '+ratio+' '+(animClass||'')+'">'+
