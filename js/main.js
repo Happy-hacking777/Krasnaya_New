@@ -22,7 +22,7 @@
         "The figures turned away seem to choose a space of silence, where nothing needs to be explained or displayed. The wall becomes a boundary between the outer and inner worlds, the visible and the hidden.\n\n"+
         "What happens when a person stops being a reflection of the world around them and is left alone with themselves?",
       works:[
-        {title:'Gala in white', size:'150 × 55 cm', medium:'Oil on canvas', location:'Lisbon', year:'2026', price:'€6,700', palette:'pal-a'},
+        {title:'Gala in white', size:'170 × 55 cm', medium:'Oil on canvas', location:'Lisbon', year:'2026', price:'€6,700', palette:'pal-a'},
         {title:'Girls in Blue', size:'150 × 150 cm', medium:'Oil on canvas', location:'Lisbon', year:'2026', price:'€5,300', palette:'pal-d'},
         {title:'Woman in Pink and Green', size:'120 × 120 cm', medium:'Oil on canvas', location:'Lisbon', year:'2026', price:'€3,700', palette:'pal-f'},
         {title:'Boy in Blue', size:'160 × 110 cm', medium:'Oil on canvas', location:'Lisbon', year:'2026', price:'€4,500', palette:'pal-e'},
