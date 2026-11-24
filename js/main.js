@@ -22,14 +22,13 @@
         "The figures turned away seem to choose a space of silence, where nothing needs to be explained or displayed. The wall becomes a boundary between the outer and inner worlds, the visible and the hidden.\n\n"+
         "What happens when a person stops being a reflection of the world around them and is left alone with themselves?",
       works:[
-        {title:'Turned Away', size:'100 × 80 cm', year:'2025', price:'€1,600', palette:'pal-d'},
-        {title:'The Wall', size:'70 × 90 cm', year:'2024', price:null, palette:'pal-f'},
-        {title:'Silence I', size:'60 × 60 cm', year:'2025', price:'€980', palette:'pal-e'},
-        {title:'Boundary', size:'80 × 60 cm', year:'2024', price:'€1,150', palette:'pal-d'},
-        {title:'Alone', size:'50 × 70 cm', year:'2025', price:'€890', palette:'pal-a'},
-        {title:'Silence II', size:'60 × 60 cm', year:'2025', price:'€1,020', palette:'pal-c'},
-        {title:'Reflection', size:'70 × 60 cm', year:'2025', price:'€1,180', palette:'pal-b'},
-        {title:'Distance', size:'90 × 70 cm', year:'2024', price:'€1,350', palette:'pal-e'}
+        {title:'Gala in white', size:'150 × 55 cm', medium:'Oil on canvas', location:'Lisbon', year:'2026', price:'€6,700', palette:'pal-a'},
+        {title:'Girls in Blue', size:'150 × 150 cm', medium:'Oil on canvas', location:'Lisbon', year:'2026', price:'€5,300', palette:'pal-d'},
+        {title:'Woman in Pink and Green', size:'120 × 120 cm', medium:'Oil on canvas', location:'Lisbon', year:'2026', price:'€3,700', palette:'pal-f'},
+        {title:'Boy in Blue', size:'160 × 110 cm', medium:'Oil on canvas', location:'Lisbon', year:'2026', price:'€4,500', palette:'pal-e'},
+        {title:'Man in Green', size:'120 × 120 cm', medium:'Oil on canvas', location:'Lisbon', year:'2026', price:'€3,700', palette:'pal-d'},
+        {title:'Man in Yellow', size:'120 × 120 cm', medium:'Oil on canvas', location:'Lisbon', year:'2026', price:'€3,900', palette:'pal-a'},
+        {title:'Boy in Purple', size:'180 × 100 cm', medium:'Oil on canvas', location:'Lisbon', year:'2026', price:'€5,700', palette:'pal-b'}
       ]
     },
     {
@@ -138,6 +137,18 @@
   function slugify(s){
     return String(s).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'')
       .trim().replace(/[^a-z0-9]+/g,'-').replace(/(^-|-$)/g,'');
+  }
+
+  // Builds the one-line "size · medium · location, year" caption shown
+  // under a painting's title, in the same small font throughout.
+  // medium/location are optional — plain works (no medium/location set)
+  // still render as the original "size · year".
+  function dimsLine(w){
+    var parts = [w.size];
+    if(w.medium) parts.push(w.medium);
+    if(w.location) parts.push(w.location + (w.year ? ', '+w.year : ''));
+    else if(w.year) parts.push(w.year);
+    return parts.join(' · ');
   }
 
   // Where a real photo is expected to live for a given collection/
@@ -298,17 +309,16 @@
 
     return ''+
     '<div class="section" style="padding-top:var(--sp-4)">'+
-      '<a class="back-link" href="#/art/'+c.slug+'">'+
+      '<a class="back-link" href="#/art/'+c.slug+'" aria-label="Back to '+c.title+'">'+
         '<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 12H5M11 6l-6 6 6 6"/></svg>'+
-        c.title+
       '</a>'+
-      '<div class="stage enter">'+swatch(w.palette,'ratio-hero',c.title, pieceImg('art', c.slug, workSlug))+'</div>'+
+      '<div class="stage enter">'+swatch(w.palette,'ratio-hero',null, pieceImg('art', c.slug, workSlug))+'</div>'+
       '<div class="detail-head enter enter-2" style="margin-bottom:var(--sp-3)">'+
         '<div class="eyebrow" style="margin-bottom:.9rem">'+c.title+'</div>'+
         '<h1>'+w.title+'</h1>'+
       '</div>'+
       '<div class="piece-meta enter enter-2">'+
-        '<span class="dims">'+w.size+' · '+w.year+'</span>'+
+        '<span class="dims">'+dimsLine(w)+'</span>'+
         '<span class="price'+(w.price?'':' sold')+'">'+(w.price||'Sold')+'</span>'+
       '</div>'+
       (w.note ? '<p class="piece-note detail-body">'+w.note+'</p>' : '')+
@@ -323,11 +333,10 @@
 
     return ''+
     '<div class="section" style="padding-top:var(--sp-4)">'+
-      '<a class="back-link" href="#/shop/'+s.slug+'">'+
+      '<a class="back-link" href="#/shop/'+s.slug+'" aria-label="Back to '+s.name+'">'+
         '<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 12H5M11 6l-6 6 6 6"/></svg>'+
-        s.name+
       '</a>'+
-      '<div class="stage enter">'+swatch(p.palette,'ratio-hero',s.name, pieceImg('shop', s.slug, productSlug))+'</div>'+
+      '<div class="stage enter">'+swatch(p.palette,'ratio-hero',null, pieceImg('shop', s.slug, productSlug))+'</div>'+
       '<div class="detail-head enter enter-2" style="margin-bottom:var(--sp-3)">'+
         '<div class="eyebrow" style="margin-bottom:.9rem">Shop — '+s.name+'</div>'+
         '<h1>'+p.name+'</h1>'+

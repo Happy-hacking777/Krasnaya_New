@@ -1,6 +1,13 @@
-In Between — файлы для этой папки:
-cover.jpg                        — обложка коллекции (на главной странице)
-study-i.jpg                      — Study I
-fragment.jpg                     — Fragment
-sketch-for-a-larger-work.jpg     — Sketch for a Larger Work
-untitled.jpg                     — Untitled
+Dialogue with the Wall — файлы для этой папки (7 картин).
+Папка на диске всё ещё называется back-to-the-world — так уже загруженные фото не нужно никуда переносить.
+cover.jpg                    — обложка коллекции (сейчас — Gala in white)
+gala-in-white.jpg            — Gala in white (также первая картина в сетке)
+girls-in-blue.jpg            — Girls in Blue (раньше Turned Away)
+woman-in-pink-and-green.jpg  — Woman in Pink and Green (раньше The Wall)
+boy-in-blue.jpg               — Boy in Blue (раньше Silence I)
+man-in-green.jpg              — Man in Green (раньше Boundary)
+man-in-yellow.jpg             — Man in Yellow (раньше Alone)
+boy-in-purple.jpg             — Boy in Purple (раньше Reflection, объединена с Silence II)
+
+silence-ii.jpg, distance.jpg, the-wall.jpg, silence-i.jpg, boundary.jpg, alone.jpg,
+reflection.jpg, turned-away.jpg больше не используются в коде (файлы переименованы/объединены).

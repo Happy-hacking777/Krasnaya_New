@@ -35,16 +35,18 @@
 - `elephant.jpg` — Elephant
 - `rabbit.jpg` — Rabbit
 
-**Dialogue with the Wall** (папка на диске всё ещё называется `back-to-the-world` — так уже загруженные фото не нужно никуда переносить) → `images/art/back-to-the-world/` (8 картин)
-- `cover.jpg` — обложка коллекции
-- `turned-away.jpg` — Turned Away
-- `the-wall.jpg` — The Wall
-- `silence-i.jpg` — Silence I
-- `boundary.jpg` — Boundary
-- `alone.jpg` — Alone
-- `silence-ii.jpg` — Silence II
-- `reflection.jpg` — Reflection
-- `distance.jpg` — Distance
+**Dialogue with the Wall** (папка на диске всё ещё называется `back-to-the-world` — так уже загруженные фото не нужно никуда переносить) → `images/art/back-to-the-world/` (7 картин)
+- `cover.jpg` — обложка коллекции (сейчас — Gala in white)
+- `gala-in-white.jpg` — Gala in white (также первая картина в сетке, 150 × 55 cm)
+- `girls-in-blue.jpg` — Girls in Blue (раньше Turned Away)
+- `woman-in-pink-and-green.jpg` — Woman in Pink and Green (раньше The Wall)
+- `boy-in-blue.jpg` — Boy in Blue (раньше Silence I)
+- `man-in-green.jpg` — Man in Green (раньше Boundary)
+- `man-in-yellow.jpg` — Man in Yellow (раньше Alone)
+- `boy-in-purple.jpg` — Boy in Purple (раньше Reflection, объединена с Silence II)
+
+Старые имена файлов (the-wall.jpg, silence-i.jpg, boundary.jpg, alone.jpg, reflection.jpg,
+silence-ii.jpg, distance.jpg, turned-away.jpg) в коде больше не используются.
 
 **In Between** → `images/art/in-between/` (5 картин)
 - `cover.jpg` — обложка коллекции
@@ -101,6 +103,12 @@
 ```
 
 Описание появится на странице этой конкретной картины, под ценой.
+
+Если захочешь указать технику и место создания прямо в строке с размером и годом (мелким шрифтом, как у «120 × 90 cm · Oil on canvas · Lissbon, 2026») — добавь в ту же запись поля `medium` (техника, например `'Oil on canvas'`) и/или `location` (город, например `'Lissbon'`) — они подставятся в ту же строчку, где сейчас размер и год, без отдельного абзаца ниже. Поле `note` остаётся для отдельного абзаца-описания под ними (как у Horse I) — используй их вместе или по отдельности, как нужно. Пример:
+
+```js
+{title:'Gala in white', size:'120 × 90 cm', medium:'Oil on canvas', location:'Lissbon', year:'2026', price:'€6,700', palette:'pal-a'}
+```
 
 ## 5. Как добавить новую коллекцию или раздел Shop
 
