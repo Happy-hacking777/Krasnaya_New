@@ -230,13 +230,10 @@
       '<div class="checker">'+artRows+'</div>'+
     '</section>'+
 
-    '<section class="section" id="shop">'+
-      '<div class="section-head section-head--center">'+
-        '<h2>Shop</h2>'+
-        '<p class="section-note">Prints and wearables from the studio.</p>'+
-      '</div>'+
-      '<div class="checker">'+shopRows+'</div>'+
-    '</section>'+
+    /* Shop section hidden on the homepage for now — the code and data
+       are untouched (shopRows above, SHOP array, viewShop/viewProduct),
+       so it's a one-line change to bring back later: just re-add the
+       '<section id="shop">'... block here. */
 
     '<section class="section" id="about">'+
       '<div class="section-head"><h2>About</h2></div>'+
