@@ -34,7 +34,7 @@
     {
       slug:'patina-of-childhood',
       title:'The Patina of Childhood',
-      years:'2023–2024',
+      years:'2014–2026',
       palette:'pal-a',
       teaser:'Childhood never truly disappears. It remains within us, changing and accumulating layers of experience as we grow older.',
       description:
@@ -43,14 +43,21 @@
         "Their weathered surfaces become a metaphor for human memory and the passage of time. We change and grow older, gathering our own layers of experience, while continuing to carry within us the part of ourselves that once encountered these toys for the first time.\n\n"+
         "Childhood is not the past here. It is a state that continues to live within us, acquiring its own patina with time.",
       works:[
-        {title:'Horse I', size:'80 × 60 cm', year:'2024', price:'€1,200', palette:'pal-a', note:'Oil on canvas. Part of the opening group of works for this series — draft note, replace with real text.'},
-        {title:'Bear', size:'60 × 50 cm', year:'2024', price:'€950', palette:'pal-c'},
-        {title:'Dog', size:'70 × 70 cm', year:'2023', price:null, palette:'pal-e'},
-        {title:'Horse II', size:'50 × 40 cm', year:'2023', price:'€780', palette:'pal-f'},
-        {title:'Rocking Horse', size:'90 × 70 cm', year:'2024', price:'€1,450', palette:'pal-a'},
-        {title:'Old Toy', size:'40 × 40 cm', year:'2023', price:'€620', palette:'pal-c'},
-        {title:'Elephant', size:'55 × 45 cm', year:'2024', price:'€880', palette:'pal-d'},
-        {title:'Rabbit', size:'45 × 35 cm', year:'2023', price:'€540', palette:'pal-b'}
+        {title:'Baby Toy Horse Zina', size:'100 × 100 cm', medium:'Oil on canvas', location:'Lisbon', year:'2026', price:null, palette:'pal-a'},
+        {title:'Baby Horse Emma', size:'120 × 100 cm', medium:'Oil on canvas', location:'Lisbon', year:'2026', price:null, palette:'pal-b'},
+        {title:'Toys Friendship', size:'100 × 100 cm', medium:'Oil on canvas', location:'Lisbon', year:'2026', price:'€2,700', palette:'pal-c'},
+        {title:'Baby Doll Horse Manu', size:'100 × 100 cm', medium:'Oil on canvas', location:'Lisbon', year:'2026', price:null, palette:'pal-d'},
+        {title:'Baby Dog Toy', size:'100 × 100 cm', medium:'Oil on canvas', location:'Lisbon', year:'2026', price:null, palette:'pal-e'},
+        {title:'Zebra Girl Toy', size:'100 × 100 cm', medium:'Oil on canvas', location:'Lisbon', year:'2026', price:'€2,800', palette:'pal-f'},
+        {title:'Rabbit Tom', size:'120 × 100 cm', medium:'Oil on canvas', location:'Lisbon', year:'2025', price:'€2,300', palette:'pal-a'},
+        {title:'Rider Alice', size:'120 × 100 cm', medium:'Oil on canvas', location:'Lisbon', year:'2025', price:null, palette:'pal-b'},
+        {title:'Llama Mamma', size:'120 × 100 cm', medium:'Oil on canvas', location:'Saint Petersburg', year:'2014', price:null, palette:'pal-c'},
+        {title:'Bear Doll I', size:'100 × 80 cm', medium:'Oil on canvas', location:'Saint Petersburg', year:'2024', price:null, palette:'pal-d'},
+        {title:'Bear Dolls II', size:'100 × 80 cm', medium:'Oil on canvas', location:'Moscow', year:'2021', price:null, palette:'pal-e'},
+        {title:'Bear Dolls III', size:'100 × 80 cm', medium:'Oil on canvas', location:'Moscow', year:'2021', price:null, palette:'pal-f'},
+        {title:'Bear Dolls IV', size:'100 × 80 cm', medium:'Oil on canvas', location:'Moscow', year:'2021', price:null, palette:'pal-a'},
+        {title:'Bear Dolls V', size:'100 × 80 cm', medium:'Oil on canvas', location:'Moscow', year:'2021', price:null, palette:'pal-b'},
+        {title:'Bear Dolls VI', size:'100 × 80 cm', medium:'Oil on canvas', location:'Moscow', year:'2021', price:null, palette:'pal-c'}
       ]
     },
     {
@@ -144,7 +151,8 @@
   // medium/location are optional — plain works (no medium/location set)
   // still render as the original "size · year".
   function dimsLine(w){
-    var parts = [w.size];
+    var parts = [];
+    if(w.size) parts.push(w.size);
     if(w.medium) parts.push(w.medium);
     if(w.location) parts.push(w.location + (w.year ? ', '+w.year : ''));
     else if(w.year) parts.push(w.year);
@@ -258,7 +266,7 @@
           '<span class="card-title">'+w.title+'</span>'+
           '<span class="card-price'+(w.price?'':' sold')+'">'+(w.price||'Sold')+'</span>'+
         '</div>'+
-        '<div class="card-dims">'+w.size+' · '+w.year+'</div>'+
+        '<div class="card-dims">'+(w.size?w.size+' · ':'')+w.year+'</div>'+
       '</a>';
     }).join('');
 

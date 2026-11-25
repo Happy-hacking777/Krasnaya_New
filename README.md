@@ -24,16 +24,23 @@
 
 ### Art
 
-**The Patina of Childhood** → `images/art/patina-of-childhood/` (8 картин)
-- `cover.jpg` — обложка коллекции (показывается на главной)
-- `horse-i.jpg` — Horse I
-- `bear.jpg` — Bear
-- `dog.jpg` — Dog
-- `horse-ii.jpg` — Horse II
-- `rocking-horse.jpg` — Rocking Horse
-- `old-toy.jpg` — Old Toy
-- `elephant.jpg` — Elephant
-- `rabbit.jpg` — Rabbit
+**The Patina of Childhood** → `images/art/patina-of-childhood/` (15 картин)
+- `cover.jpg` — обложка коллекции (= Baby Toy Horse Zina)
+- `baby-toy-horse-zina.jpg` — 1. Baby Toy Horse Zina
+- `baby-horse-emma.jpg` — 2. Baby Horse Emma
+- `toys-friendship.jpg` — 3. Toys Friendship
+- `baby-doll-horse-manu.jpg` — 4. Baby Doll Horse Manu
+- `baby-dog-toy.jpg` — 5. Baby Dog Toy
+- `zebra-girl-toy.jpg` — 6. Zebra Girl Toy
+- `rabbit-tom.jpg` — 7. Rabbit Tom
+- `rider-alice.jpg` — 8. Rider Alice
+- `llama-mamma.jpg` — 9. Llama Mamma
+- `bear-doll-i.jpg` — 10. Bear Doll I
+- `bear-dolls-ii.jpg` — 11. Bear Dolls II
+- `bear-dolls-iii.jpg` — 12. Bear Dolls III
+- `bear-dolls-iv.jpg` — 13. Bear Dolls IV
+- `bear-dolls-v.jpg` — 14. Bear Dolls V
+- `bear-dolls-vi.jpg` — 15. Bear Dolls VI
 
 **Dialogue with the Wall** (папка на диске всё ещё называется `back-to-the-world` — так уже загруженные фото не нужно никуда переносить) → `images/art/back-to-the-world/` (7 картин)
 - `cover.jpg` — обложка коллекции (сейчас — Gala in white)
